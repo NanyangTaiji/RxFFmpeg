@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion compileSdkValue
+    compileSdk 33
     defaultConfig {
         applicationId "io.microshow.rxffmpeg.app"
         minSdkVersion minSdkValue
-        targetSdkVersion targetSdkValue
+        targetSdk 30
         versionCode versionCodeValue
         versionName versionNameValue
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -58,8 +58,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     sourceSets {
@@ -67,6 +67,7 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+    buildToolsVersion '33.0.2'
 }
 
 dependencies {

@@ -44,8 +44,9 @@ public class FindFragment extends BaseFragment<FragmentFindBinding> implements V
     @Override
     public void initData() {
         //设置播放url
-        binding.editText.setText("https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4");
-//        binding.editText.setText("/storage/emulated/0/1/1.mp4");
+        //      binding.editText.setText("https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4");
+       // binding.editText.setText("/storage/D8F4-479D/20161220.mts");
+        binding.editText.setText("/storage/D8F4-479D/00041.mp4");
         binding.button.setOnClickListener(this);
 
         this.mPlayerView = binding.mPlayerView;

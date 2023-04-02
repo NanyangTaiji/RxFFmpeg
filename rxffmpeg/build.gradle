@@ -1,10 +1,10 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion compileSdkValue
+    compileSdk 33
     defaultConfig {
         minSdkVersion minSdkValue
-        targetSdkVersion targetSdkValue
+        targetSdk 30
         versionCode versionCodeValue
         versionName versionNameValue
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -33,6 +33,7 @@ android {
             jniLibs.srcDirs = ['libs']
         }
     }
+    buildToolsVersion '33.0.2'
 }
 
 dependencies {
